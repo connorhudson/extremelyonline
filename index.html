@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>EXTREMELY ONLINE</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/tjr5iya.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js" defer></script>
+    </head>
+    <body>
+        <h1 id="branding-title">EXTREMELY<br>ONLINE</h1>
+        <css-doodle>
+            :doodle {
+                width: 100% !important;
+                height: 90vmax !important;
+                @grid: 15 / 100vmax;
+                background: #0a0c27;
+                font-family: sans-serif;
+                overflow: hidden;
+                mask: url('blobs/blob2.svg') top left/contain no-repeat;
+                margin-top: 2em;
+            }
+            :after {
+                content: \@hex(@rand(0x25a0, 0x25fc));
+                transform: scale(@r(1, 4.5)) rotate(@r(360deg)) translate(@r(30px), @r(30px));
+                color: hsla(@r(270), 90%, @r(50%, 70%), 1);
+                font-size: 3vmax;
+            }
+        </css-doodle>
+        <div class="featured">
+            <h2 id="featured-title">featured brands</h2>
+            <div class="brand-spot">
+            </div>
+        </div>
+    </body>
+</html>
