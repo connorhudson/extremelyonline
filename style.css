@@ -15,6 +15,7 @@ h1#branding-title {
     position: absolute;
     top: 8rem;
     left: 3rem;
+    margin: 0;
     font-family: 'Neplus';
     font-size: 6.5rem;
 }
@@ -25,9 +26,20 @@ h1#branding-title {
 }
 
 h2#featured-title {
-    font-family: p22-underground;
-    font-size: 4rem;
+    font-family: rigid-square;
+    font-size: 5rem;
     position: absolute;
-    right: 18rem;
+    right: 10rem;
     top: -16rem;
+}
+
+.brands {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brands .brand-logo {
+    height: 250px;
 }

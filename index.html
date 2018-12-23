@@ -27,8 +27,36 @@
         </css-doodle>
         <div class="featured">
             <h2 id="featured-title">featured brands</h2>
-            <div class="brand-spot">
+            <div class="brands">
+                <div class="brand-spot">
+                    <a href="https://connor.fun">
+                        <img class="brand-logo" src="brand-assets/connor.fun.png" />
+                    </a>
+                </div>
+                <div class="brand-spot">
+                    <a href="https://sketchy.company">
+                        <img class="brand-logo" src="brand-assets/sketchy.company.png" />
+                    </a>
+                </div>
             </div>
         </div>
+        <css-doodle>
+                :doodle {
+                    width: 100% !important;
+                    height: 500px !important;
+                    @grid: 10 / 100vmax;
+                    background: #0a0c27;
+                    font-family: sans-serif;
+                    overflow: hidden;
+                    mask: url('blobs/blob3.svg') top left/cover no-repeat;
+                    margin-top: 2em;
+                }
+                :after {
+                    content: \@hex(@rand(0x25a0, 0x25fc));
+                    transform: scale(@r(1, 4)) rotate(@r(360deg)) translate(@r(30px), @r(30px));
+                    color: hsla(@r(270), 90%, @r(50%, 70%), 1);
+                    font-size: 3vmax;
+                }
+            </css-doodle>
     </body>
 </html>
