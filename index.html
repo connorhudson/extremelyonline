@@ -6,7 +6,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js" defer></script>
     </head>
     <body>
-        <h1 id="branding-title">EXTREMELY<br>ONLINE</h1>
+        <div class="branding-container">
+            <h1 id="branding-title">EXTREMELY<br>ONLINE</h1>
+        </div>
         <css-doodle>
             :doodle {
                 width: 100% !important;
@@ -15,7 +17,7 @@
                 background: #0a0c27;
                 font-family: sans-serif;
                 overflow: hidden;
-                mask: url('blobs/blob2.svg') top left/contain no-repeat;
+                mask: url('blobs/blob2.svg') top left/cover no-repeat;
                 margin-top: 2em;
             }
             :after {

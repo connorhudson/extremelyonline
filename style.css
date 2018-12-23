@@ -17,7 +17,7 @@ h1#branding-title {
     left: 3rem;
     margin: 0;
     font-family: 'Neplus';
-    font-size: 6.5rem;
+    font-size: 7.5vw;
 }
 
 .featured {
@@ -29,12 +29,12 @@ h2#featured-title {
     font-family: rigid-square;
     font-size: 5rem;
     position: absolute;
-    right: 10rem;
-    top: -16rem;
+    right: 5vw;
+    top: -12vw;
 }
 
 .brands {
-    margin-top: 2rem;
+    padding-top: 13vw;
     width: 100%;
     display: flex;
     justify-content: space-around;
