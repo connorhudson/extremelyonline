@@ -43,3 +43,35 @@ h2#featured-title {
 .brands .brand-logo {
     height: 250px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    h1#branding-title {
+        top: 25vw;
+        left: 1rem;
+        font-size: 12vw;
+        width: 0;
+    }
+
+    h2#featured-title {
+        position: relative;
+        font-size: 2.5rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        margin: auto;
+        text-align: left;
+        top: initial;
+        right: initial;
+    }
+
+    .brands {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .brands .brand-logo {
+        height: initial;
+        width: 75%;
+    }
+}

@@ -2,7 +2,9 @@
     <head>
         <title>EXTREMELY ONLINE</title>
         <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="favicon.png"> 
         <link rel="stylesheet" href="https://use.typekit.net/tjr5iya.css">
+        <meta name="viewport" content="width=device-width">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js" defer></script>
     </head>
     <body>
@@ -26,14 +28,21 @@
                 color: hsla(@r(270), 90%, @r(50%, 70%), 1);
                 font-size: 3vmax;
             }
+
+            @media screen and (max-width: 600px) {
+                :doodle {
+                    margin-top: -2em;
+                }
+            }
         </css-doodle>
         <div class="featured">
             <h2 id="featured-title">featured brands</h2>
             <div class="brands">
                 <div class="brand-spot">
-                    <a href="https://connor.fun">
-                        <img class="brand-logo" src="brand-assets/connor.fun.png" />
-                    </a>
+                    <img class="brand-logo" src="brand-assets/connor.fun.png">
+
+                    <a href="https://connor.fun"></a>
+                    </img>
                 </div>
                 <div class="brand-spot">
                     <a href="https://sketchy.company">
@@ -42,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <css-doodle>
+        <css-doodle class="bottom-doodle">
                 :doodle {
                     width: 100% !important;
                     height: 500px !important;
